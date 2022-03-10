@@ -1,0 +1,122 @@
+.home {
+  padding: 0 16px;
+  display: flex;
+}
+
+.home-create {
+  padding: 15px;
+  width: 75%;
+  height: 100vh;
+}
+
+.home-create-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.home-create-form {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-create-input {
+  width: 100%;
+  margin-bottom: 15px !important;
+}
+
+.todo-list {
+  padding: 15px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 500px;
+}
+
+.todo-list > p > span {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+
+.todo-list-title {
+  margin-bottom: 10px;
+}
+
+.todo-list ul {
+  // li.todo-list-search {
+  //   margin-bottom: 10px;
+  //   input {
+  //     display: block;
+  //     width: 100%;
+  //     border: 1px solid black;
+  //     border-radius: 6px;
+  //     font-size: 14px;
+  //     padding: 3px 12px;
+
+  //     &:focus {
+  //       border-color: var(--border-focus);
+  //       box-shadow: var(--shadow-focus);
+  //     }
+  //   }
+  // }
+
+  li.todo-list-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding-right: 5px;
+
+    div:last-child {
+      display: flex;
+      align-items: center;
+      a {
+        font-weight: 600;
+      }
+    }
+
+    .todo-list-link {
+      font-weight: 300;
+      display: block;
+      font-size: 14px;
+      color: black;
+      text-decoration: none;
+      width: 100%;
+      padding: 5px 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .todo-list-remove,
+    .todo-list-check,
+    .todo-list-edit {
+      cursor: pointer;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+  }
+  li.todo-list-item.done {
+    background-color: #a0d911;
+  }
+
+  .todo-list-icon {
+    margin-right: 5px;
+  }
+}
+
+.todo-info > p {
+  margin-bottom: 10px;
+}
+
+.todo-info .btns {
+  button {
+    margin-right: 10px;
+  }
+}

@@ -13,6 +13,8 @@
 :root {
   --header-height: 64px;
   --header-bg: #0e1116;
+  --border-focus: #0349b4;
+  --shadow-focus: 0 0 0 3px rgba(3, 73, 180, 0.3);
 }
 
 html,
@@ -49,4 +51,9 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
